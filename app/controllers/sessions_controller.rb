@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    flash[:success] ="ログアウト"
+    flash[:success] ="ログアウト完了"
     redirect_to root_url
   end
   
